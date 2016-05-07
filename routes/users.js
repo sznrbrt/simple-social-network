@@ -47,7 +47,7 @@ router.put('/profile', User.isLoggedIn, (req, res) => {
 // /api/users/people
 router.get('/people', User.isLoggedIn, (req, res) => {
   User
-    .find({})
+    .find({_id: {$ne: req.user._id}})
     .select({password: false})
     .exec((err, users) => {
       return err ? res.status(400).send(err) : res.send(users);

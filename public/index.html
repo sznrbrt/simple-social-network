@@ -16,20 +16,7 @@
   <script src="/js/controllers.js"></script>
   <script src="/js/services.js"></script>
 </head>
-<body>
-
-    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
-      <div class="container">
-        <ul class="nav navbar-nav">
-          <li class="active logo"><span class="glyphicon glyphicon-tower"></span>Property Manager</li>
-          <li><a ui-sref="properties"><span class="glyphicon glyphicon-home"></span>Properties</a></li>
-          <li><a ui-sref="clients"><span class="glyphicon glyphicon-user"></span>Clients</a></li>
-        </ul>
-      </div>
-    </nav>
-
-    <!-- Where the templates go -->
-    <ui-view></ui-view>
-    <!--  -->
+<body ng-app="socialApp">
+  <ui-view></ui-view>
 </body>
 </html>
