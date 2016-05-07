@@ -168,6 +168,15 @@ body {
 .profileImg {
   height: 100px;
   width: 100px;
+  position: relative;
+  top: 17px;
+}
+
+.profileImgPers {
+  height: 100px;
+  width: 100px;
+  position: relative;
+  top: 2px;
 }
 
 .edtImg {
